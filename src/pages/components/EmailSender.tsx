@@ -2,13 +2,6 @@ import React, { useRef, useState, FormEvent } from 'react';
 import emailjs from '@emailjs/browser';
 import styles from "../Contact.module.css";
 
-interface FormValues {
-  subject: string
-  user_name: string;
-  user_email: string;
-  message: string;
-}
-
 const EmailSender: React.FC = () => {
   const form = useRef<HTMLFormElement>(null);
   // keeps count of the mails send

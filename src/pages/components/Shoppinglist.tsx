@@ -21,9 +21,9 @@ const ShoppingList = () => {
   }
   const handleChangeAdd: React.MouseEventHandler<HTMLButtonElement> = () => {
     let newitem:ShoppingItem = {itemName: name,itemQuantity:quantity};
-    if (quantity == 0) {
+    if (quantity === 0) {
       setAlerttext(`quantity cannot be 0`)
-    }else if (name.length == 0) {
+    }else if (name.length === 0) {
       setAlerttext(`name cannot be empty`)
     }
     else{
@@ -34,7 +34,7 @@ const ShoppingList = () => {
     
   }
   const DropItem = (pindex:number,pname:string)=>{
-    const listitemsCopy = listitems.filter(function (e, index) {return index != pindex;})
+    const listitemsCopy = listitems.filter(function (e, index) {return index !== pindex;})
     setListitems([...listitemsCopy])
     setAlerttext(`item ${pname} is deleted`)
   }

@@ -1,4 +1,4 @@
-import { Outlet, createBrowserRouter, RouterProvider, Route, NavLink } from "react-router-dom";
+import { Outlet, createBrowserRouter, RouterProvider, NavLink } from "react-router-dom";
 import styles from "./App.module.css";
 import Home from "./pages/Home"
 import Projects from "./pages/projects"

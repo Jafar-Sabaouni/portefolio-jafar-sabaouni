@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from "react";
-import { CSSProperties } from 'react';
+
 
 
 /*ChatBox*/

@@ -1,14 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import 'react-circular-progressbar/dist/styles.css';
 import styles from "./Projects.module.css";
 import ShoppingList from "./components/Shoppinglist"
 import ChatBox from "./components/ChatBox"
 import Calculator from "./components/Calculator"
 import PokemonList from "./components/PokemonList";
-
+/*
 interface PopupProps{
 
 }
+
 const Popup=({}:PopupProps)=>{
     const [popup1, setPopup1] = useState<boolean>(false);
     return(<div className={styles.popupContainer} >
@@ -17,7 +18,7 @@ const Popup=({}:PopupProps)=>{
             <div><ShoppingList/></div>
         </div></div></div>)
 
-}
+}*/
 const  Projects=()=> {
     const [popup1, setPopup1] = useState<boolean>(false);
     const [popup2, setPopup2] = useState<boolean>(false);
@@ -80,10 +81,10 @@ const  Projects=()=> {
                 <div onClick={() => { setPopup2(true) }}><h2>Calculator</h2><p>The Calculator project is a tool to calculate 2 nummbers using these mathematical symbols: +, -, *, /</p></div>
                 <div onClick={() => { setPopup3(true) }}><h2>ChatBox</h2><p>The ChatBox project is a tool that allows the user to create messages and delete them </p></div>
                 <div onClick={() => { setPopup4(true) }}><h2>PokemonList</h2><p>The PokeList project shows a list where the user can choose its length and can search the list</p></div>
-                <div onClick={() => { setPopup5(true) }}><h2></h2></div>
-                <div onClick={() => { setPopup6(true) }}><h2></h2></div>
-                <div onClick={() => { setPopup7(true) }}><h2></h2></div>
-                <div onClick={() => { setPopup8(true) }}><h2></h2></div>
+                <div onClick={() => { setPopup5(true) }}><h2>1</h2></div>
+                <div onClick={() => { setPopup6(true) }}><h2>2</h2></div>
+                <div onClick={() => { setPopup7(true) }}><h2>3</h2></div>
+                <div onClick={() => { setPopup8(true) }}><h2>4</h2></div>
             </section>
         </main>
     );

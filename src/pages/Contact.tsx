@@ -1,4 +1,4 @@
-import React,{useEffect, useState} from 'react';
+import React from 'react';
 import 'react-circular-progressbar/dist/styles.css';
 import EmailSender from "./components/EmailSender"
 import styles from "./Contact.module.css";
