@@ -1,0 +1,236 @@
+
+.mainProfilePageDescription{
+    background-color: #073648;
+    height: 685px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.mainProfilePageDescription > div{
+    width: 500px;
+    height: 350px;
+    margin-right: 5%;
+    
+
+}
+.mainProfilePageDescriptionText{
+    margin-top: 25%; 
+    margin-bottom: 30%;
+}
+.mainProfilePageDescription > div >h1,.mainProfilePageDescription > div >h3,.mainProfilePageDescription > div >p{
+    z-index: 1;
+    color: #d9d9d9;
+
+}
+.mainProfileImageContainer{
+    z-index: 1;
+    padding: 3px;
+    background-color: #073648;
+    border-style: solid;
+    border-color: #d9d9d9;
+    border-width: 4px;
+    border-radius: 50%;
+    max-width: 350px;
+    max-height: 350px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    
+}
+.mainProfileImageContainer> img{
+    background-color: #d9d9d9;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    justify-self: center;
+    
+}
+.mainProfilePageExperiences{
+    padding-top:50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    height: 330px;
+    
+}
+.mainProfilePageExperiences > h2{
+    font-size: 25px;
+    color: #073648;
+    text-align: center;
+}
+.mainProfilePageExperiencesBar{
+    width: 65%;
+    height: 40%;
+    margin: auto;
+    background-color: #073648;
+    border-radius: 5px;
+    box-shadow: 4px 5px 8px #343434;
+    display: flex;
+    justify-content: center;
+}
+.mainProfilePageExperiencesBarCircle{
+    margin: auto;
+    height: 72%;
+    width: fit-content;
+}
+.mainProfilePagecontainerlanguagesDetails{
+    height: 200PX;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.mainProfilePageLanguages{
+    padding-top:50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    width: 40%;
+    height: 400px;
+    
+}
+.mainProfilePageLanguages> h2{
+    font-size: 25px;
+    color: #073648;
+    text-align: center;
+}
+.mainProfilePageLanguagesBar{
+    width: 50%;
+    height: 50%;
+    background-color: #073648;
+    border-radius: 5px;
+    box-shadow: 4px 5px 8px #343434;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.mainProfilePageLanguagesBar >div>div{
+    max-width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+}
+.mainProfilePageLanguagesBar >div >div>p {
+    color: #d9d9d9;
+    font-size: 15px;
+    font-weight: bolder;
+
+}
+.mainProfilePageLanguagesPercentageBar{
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: #09455c;
+    border-radius: 15px;
+    height: 15px;
+    width: 200px;
+}
+.mainProfilePageLanguagesPercentageBarDuch{
+    background-color: #F66D44;
+    border-radius: 15px;
+    height: 15px;
+    width: 91%;
+}
+.mainProfilePageLanguagesPercentageBarEnglish{
+    background-color: #64C2A6;
+    border-radius: 15px;
+    height: 15px;
+    width: 70%;
+}
+.mainProfilePageLanguagesPercentageBarBerbers{
+    background-color: #C6D68F;
+    border-radius: 15px;
+    height: 15px;
+    width: 95%;
+}
+.mainProfilePageLanguagesPercentageBarFrench{
+    background-color: #2d87bb;
+    border-radius: 50%;
+    height: 15px;
+    width: 5%;
+}
+
+.mainProfilePageDetails{
+    padding-top:50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    width: 40%;
+    height: 400px;
+    
+}
+.mainProfilePageDetails> h2{
+    font-size: 25px;
+    color: #073648;
+    text-align: center;
+}
+.mainProfilePageDetailsBar{
+    width: 40%;
+    height: 50%;
+    background-color: #073648;
+    border-radius: 5px;
+    box-shadow: 4px 5px 8px #343434;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.mainProfilePageDetailsBar>table{
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.mainProfilePageDetailsBar>table>tr{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+.mainProfilePageDetailsBar>table>tr>th,.mainProfilePageDetailsBar>table>tr>td{
+color:#d9d9d9;
+}
+.AdvicePopup{
+    position: fixed;
+    height: 100px;
+    width: 300px;
+    background-color: #7B9C86;
+    box-shadow: 4px 5px 8px #343434;
+    border-radius: 5px;
+    left: 78%;
+    top:85%;
+    display: flexbox;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.AdvicePopup> p{
+    color: #fff;
+    text-align: center;
+    width: 90%;
+
+}
+.AdvicePopup> button{
+    position: fixed;
+    background-color: rgb(255, 55, 55);
+    color: #fff;
+    border-width: 0;
+    border-radius: 5px;
+    left: 96%;
+    top:85.5%;
+}
+.AdvicePopup> button:hover{
+    background-color:#fff ;
+    color:  rgb(255, 55, 55); 
+}

@@ -1,26 +1,52 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Outlet, createBrowserRouter, RouterProvider, Route, NavLink } from "react-router-dom";
+import styles from "./App.module.css";
+import Home from "./pages/Home"
+import Projects from "./pages/projects"
+import Contact from "./pages/Contact"
+const Root = () => {
+return (
+<div className={styles.container}>
+<div className={styles.nav}>
+<NavLink className={({isActive}) => isActive ? styles.activeNavLink : styles.navLink} to="/" >Home</NavLink>
+<NavLink className={({isActive}) => isActive ? styles.activeNavLink : styles.navLink} to="projects">projects</NavLink>
+<NavLink className={({isActive}) => isActive ? styles.activeNavLink : styles.navLink} to="contact">contact</NavLink>
+</div>
+<div className={styles.content}>
+<Outlet/>
+</div >
+<footer >© 2022  build by Jafar sabaouni using reactjs typescript.</footer>
+</div>
+);
+}
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App = () => {
+const router = createBrowserRouter([
+{
+path: "/",
+element: <Root/>,
+children: [
+{
+path: "",
+element: <Home/>
+},
+{
+path: "projects",
+element: <Projects/>
+},
+{
+path: "contact",
+element: <Contact/>
+}
+]
+}
+]);
+
+
+return (
+    <div >
+        <RouterProvider router={router} />
     </div>
-  );
+)
 }
 
 export default App;
