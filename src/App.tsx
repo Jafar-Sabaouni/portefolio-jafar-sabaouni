@@ -10,7 +10,7 @@ const Root = () => {
     return (
         <div className={styles.container}>
             <div className={styles.nav}>
-                <NavLink className={({ isActive }) => isActive ? styles.activeNavLink : styles.navLink} to="/" >Home</NavLink>
+                <NavLink className={({ isActive }) => isActive ? styles.activeNavLink : styles.navLink} to="home" >Home</NavLink>
                 <NavLink className={({ isActive }) => isActive ? styles.activeNavLink : styles.navLink} to="projects">projects</NavLink>
                 <NavLink className={({ isActive }) => isActive ? styles.activeNavLink : styles.navLink} to="contact">contact</NavLink>
             </div>
@@ -25,7 +25,7 @@ const Root = () => {
 const App = () => {
     const router = createBrowserRouter([
         {
-            path: "/",
+            path: "/portefolio-jafar-sabaouni/",
             element: <Root />,
             children: [
                 {
@@ -34,6 +34,10 @@ const App = () => {
                 },
                 {
                     path: "",
+                    element: <Home />
+                },
+                {
+                    path: "home",
                     element: <Home />
                 },
                 {
