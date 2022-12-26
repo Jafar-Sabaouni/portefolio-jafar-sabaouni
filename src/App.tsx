@@ -3,9 +3,7 @@ import styles from "./App.module.css";
 import Home from "./pages/Home"
 import Projects from "./pages/projects"
 import Contact from "./pages/Contact"
-const PageNotFound = () => {
-    return <div>An error occurred while rendering this route.</div>;
-}
+
 const Root = () => {
 
 
@@ -32,7 +30,7 @@ const App = () => {
             children: [
                 {
                     path: "*",
-                    element: <PageNotFound />
+                    element: <Home />
                 },
                 {
                     path: "",
