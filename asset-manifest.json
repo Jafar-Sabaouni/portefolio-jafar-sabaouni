@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/portefolio-jafar-sabaouni/static/css/main.3bf167ec.css",
-    "main.js": "/portefolio-jafar-sabaouni/static/js/main.41ec28a6.js",
+    "main.js": "/portefolio-jafar-sabaouni/static/js/main.9263cabb.js",
     "static/js/787.1ed0c42c.chunk.js": "/portefolio-jafar-sabaouni/static/js/787.1ed0c42c.chunk.js",
     "static/media/JafarSabaouni.png": "/portefolio-jafar-sabaouni/static/media/JafarSabaouni.2761d78709efdeb9bafe.png",
     "index.html": "/portefolio-jafar-sabaouni/index.html",
     "main.3bf167ec.css.map": "/portefolio-jafar-sabaouni/static/css/main.3bf167ec.css.map",
-    "main.41ec28a6.js.map": "/portefolio-jafar-sabaouni/static/js/main.41ec28a6.js.map",
+    "main.9263cabb.js.map": "/portefolio-jafar-sabaouni/static/js/main.9263cabb.js.map",
     "787.1ed0c42c.chunk.js.map": "/portefolio-jafar-sabaouni/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3bf167ec.css",
-    "static/js/main.41ec28a6.js"
+    "static/js/main.9263cabb.js"
   ]
 }
