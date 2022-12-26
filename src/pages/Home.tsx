@@ -30,7 +30,8 @@ const AdvicePopup = () => {
         <div className={styles.AdvicePopup}>
           <button onClick={() => { setClosePopup(!closePopup) }} >x</button>
           <p>{apiResponce?.slip.advice}</p>
-        </div>}</div>
+        </div>}
+    </div>
   )
 }
 
@@ -190,7 +191,7 @@ const Home = () => {
               </tr>
               <tr>
                 <th>Telephone:</th>
-                <td>xxxx xxx xxxx xxx</td>
+                <td>xxxx xxx xxxx</td>
               </tr>
 
             </table>

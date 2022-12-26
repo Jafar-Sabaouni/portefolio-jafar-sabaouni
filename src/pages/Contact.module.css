@@ -9,9 +9,17 @@
 .IntroTextContainer {
     text-align: center;
     max-width: 80%;
+
 }
-.IntroTextContainer >h1{
+
+.IntroTextContainer>h1 {
     text-transform: uppercase;
+}
+
+.IntroTextContainer>p {
+    background-color: #F8EBBF;
+    padding: 6px;
+    border-radius: 5px;
 }
 
 .emailSender {
@@ -27,11 +35,13 @@
     border-radius: 5px;
     margin-bottom: 50px;
 }
-.emailSender>label{
+
+.emailSender>label {
     color: #fff;
     text-transform: uppercase;
     font-weight: bolder;
 }
+
 .emailSender>input {
     width: 500px;
     border-radius: 5px;
@@ -43,6 +53,7 @@
     width: 500px;
     height: 300px;
 }
+
 .emailSender textarea::-webkit-scrollbar {
     width: 10px;
     height: 10px;
@@ -65,7 +76,19 @@
 .emailSender textarea::-webkit-scrollbar-thumb:hover {
     background: #09435a;
 }
-.WarningTextContainer{
+.emailSenderSubmit{
+    background-color: #073648;
+    color: #fff;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 1px;
+}
+.emailSenderSubmit:hover{
+    background-color: #e4e4e4;
+    color:#073648;
+}
+
+.WarningTextContainer {
     margin-left: auto;
     margin-right: auto;
     max-width: 75%;
@@ -76,8 +99,23 @@
     border-radius: 5px;
     padding: 15px;
 }
-.WarningTextContainer >p {
+
+.WarningTextContainer>p {
     color: #fff;
     text-transform: uppercase;
     font-weight: bolder;
+}
+
+@media screen and (max-width: 795px) {
+
+    .emailSender {
+        width: 400px ;
+
+    }
+    .emailSender > input {
+        width: 350px;
+    }
+    .emailSender > textarea {
+        width: 350px;
+    }
 }

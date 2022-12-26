@@ -12,6 +12,11 @@
 .IntroTextContainer >h1{
     text-transform: uppercase;
 }
+.IntroTextContainer >p{
+    background-color: #F8EBBF;
+    padding: 6px;
+    border-radius: 5px;
+}
 .ProjectsContainer {
     display: flex;
     flex-wrap: wrap;
@@ -161,4 +166,10 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 
+}
+@media screen and (max-width: 795px) {
+    .popupContainer>div{
+        width: 90%;
+        height: 60%;
+    }
 }
