@@ -25,7 +25,7 @@ const Root = () => {
 const App = () => {
     const router = createBrowserRouter([
         {
-            path: "/portefolio-jafar-sabaouni/",
+            path: "/",
             element: <Root />,
             children: [
                 {
