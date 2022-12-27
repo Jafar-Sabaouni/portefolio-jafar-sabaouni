@@ -40,7 +40,7 @@ const AdvicePopup = () => {
     setApiAdvice(json);
   }
   const fetchWeather = async () => {
-    let result = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=Antwerp,BE&appid=b1a90ec4d94d84ecf2a3f2bb634b970d&units=metric`);
+    let result = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=Antwerp,BE&appid=b1a90ec4d94d84ecf2a3f2bb634b970d&units=metric`);
     let json: weatherApi = await result.json();
     setApiWeather(json);
   }
