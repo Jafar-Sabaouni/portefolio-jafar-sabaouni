@@ -303,5 +303,9 @@
         padding: 2%;
         width: 90%;
     }
+    .mainProfilePageDetails {
+        padding: auto;
+    
+    }
     
 }

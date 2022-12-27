@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import profilePicture from '../assets/JafarSabaouni.png';
+import profilePicture from './assets/JafarSabaouni.png';
 import styles from "./Home.module.css";
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
