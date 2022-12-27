@@ -1,0 +1,62 @@
+.popupContainer {
+    position: fixed;
+    right: 3px;
+    bottom: 2px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 5px;
+  }
+  
+  .Popup {
+    z-index: 2;
+    position: relative;
+    height: 100px;
+    width: 300px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .advicePopup {
+    background-color: #7B9C86;
+    border-radius: 5px;
+  }
+  
+  .WeatherPopup {
+    background-color: #54a3a3;
+    border-radius: 5px;
+  }
+  .ageGuesPopup{
+    background-color: #d9ca98;
+    border-radius: 5px;
+
+
+  }  
+  .ageGuesPopup>div>p > input{
+    max-width:50px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #54a3a3;
+  }
+  .Popup>p {
+    color: #fff;
+    text-align: center;
+    width: 95%;
+  
+  }
+  
+  .Popup>button {
+    position: absolute;
+    background-color: rgb(255, 55, 55);
+    color: #fff;
+    border-width: 0;
+    border-radius: 5px;
+    top: 5%;
+    right: 2%;
+  }
+  
+  .Popup>button:hover {
+    background-color: #fff;
+    color: rgb(255, 55, 55);
+  }

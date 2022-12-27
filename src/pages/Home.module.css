@@ -24,13 +24,12 @@
 .mainProfilePageDescription>div>h1,
 .mainProfilePageDescription>div>h3,
 .mainProfilePageDescription>div>p {
-    z-index: 1;
     color: #d9d9d9;
 
 }
 
 .mainProfileImageContainer {
-    z-index: 1;
+
     padding: 3px;
     background-color: #073648;
     border-style: solid;
@@ -228,44 +227,6 @@
 .mainProfilePageDetailsBar>table>tr>td {
     color: #d9d9d9;
 }
-
-.AdvicePopup {
-    position: fixed;
-    height: 100px;
-    width: 300px;
-    background-color: #7B9C86;
-    box-shadow: 4px 5px 8px #343434;
-    border-radius: 5px;
-    left: 78%;
-    top: 85%;
-    display: flexbox;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.AdvicePopup>p {
-    color: #fff;
-    text-align: center;
-    width: 90%;
-
-}
-
-.AdvicePopup>button {
-    position: fixed;
-    background-color: rgb(255, 55, 55);
-    color: #fff;
-    border-width: 0;
-    border-radius: 5px;
-    left: 96%;
-    top: 85.5%;
-}
-
-.AdvicePopup>button:hover {
-    background-color: #fff;
-    color: rgb(255, 55, 55);
-}
-
 
 @media screen and (max-width: 990px) {
     .mainProfilePageDescription {

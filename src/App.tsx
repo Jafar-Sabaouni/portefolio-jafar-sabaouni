@@ -3,7 +3,7 @@ import styles from "./App.module.css";
 import Home from "./pages/Home"
 import Projects from "./pages/projects"
 import Contact from "./pages/Contact"
-
+import ApiPopups from './pages/components/ApiPopups';
 const Root = () => {
 
 
@@ -14,9 +14,11 @@ const Root = () => {
                 <NavLink className={({ isActive }) => isActive ? styles.activeNavLink : styles.navLink} to="projects">projects</NavLink>
                 <NavLink className={({ isActive }) => isActive ? styles.activeNavLink : styles.navLink} to="contact">contact</NavLink>
             </div>
+            <ApiPopups/>
             <div className={styles.content}>
                 <Outlet />
             </div >
+            
             <footer >© 2022  build by Jafar sabaouni using reactjs typescript.</footer>
         </div>
     );

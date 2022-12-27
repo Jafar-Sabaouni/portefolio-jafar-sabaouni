@@ -187,22 +187,18 @@
 
 }
 
-@media screen and (max-width: 795px) {
-    .popupContainer>div {
-        width: 90%;
-        height: 60%;
-    }
-}
+
 
 .slotMachine {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
     border-style: solid;
-    width: 500px;
-    height: 150px;
+    width: 350px;
+    height: 120px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -223,8 +219,8 @@
 }
 
 .slotMachine>div>img {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     border-radius: 10px;
     border-width: 2px;
     border-style: solid;
@@ -232,9 +228,8 @@
 }
 
 .slotMachine>div>button {
-    width: 100px;
-    min-width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     border-radius: 10px;
     border-width: 2px;
     border-style: solid;
@@ -247,4 +242,10 @@
     background-color: crimson;
     color: #fff;
 
+}
+@media screen and (max-width: 795px) {
+    .popupContainer>div {
+        width: 90%;
+        height: 60%;
+    }
 }

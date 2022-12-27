@@ -1,49 +1,48 @@
-
-  body{
-    overflow-y: scroll;
-  }
-  body::-webkit-scrollbar {
-    display: none;
+body {
+  overflow-y: scroll;
 }
-  .nav {
 
-    background-color: #073648;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
+body::-webkit-scrollbar {
+  display: none;
+}
 
-  .activeNavLink {
-    list-style: none;
-    padding: 20px;
+.nav {
 
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.623);
-    width: 80px;
-    text-align: center;
-  }
-  
-  .navLink {
-    list-style: none;
-    padding: 20px;
-    text-decoration: none;
-    color: white;
-    width: 80px;
-    text-align: center;
-  }
-  
-  .navLink:hover {
-    color: rgba(255, 255, 255, 0.623);
-  }
-  footer{
-    margin-top: 25%;
-background-color: #073648;
-color: #fff;
-text-align: center;
-height: 30px;
-  }
-  footer  {
-    
-  }
-  
+  background-color: #073648;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.activeNavLink {
+  list-style: none;
+  padding: 20px;
+
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.623);
+  width: 80px;
+  text-align: center;
+}
+
+.navLink {
+  list-style: none;
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+  width: 80px;
+  text-align: center;
+}
+
+.navLink:hover {
+  color: rgba(255, 255, 255, 0.623);
+}
+
+footer {
+  margin-top: 25%;
+  background-color: #073648;
+  color: #fff;
+  text-align: center;
+  height: 30px;
+}
+
