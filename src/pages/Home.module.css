@@ -259,7 +259,7 @@
         height: 200px;
     }
     .mainProfilePageExperiences{
-        height: 400px;
+        height: 40%;
     }
     .mainProfilePageExperiencesBar {
         width: 70%;
@@ -274,7 +274,7 @@
     }
     .mainProfilePageExperiencesBarCircle {
         margin: 10px;
-        height: 100px;
+        height: 90px;
         width: fit-content;
     }
     
