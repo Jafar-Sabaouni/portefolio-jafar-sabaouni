@@ -34,7 +34,7 @@ const Experiences = () => {
             })}
           />
           <CircularProgressbar
-            value={70}
+            value={80}
             text={`Node.js`}
             className={styles.mainProfilePageExperiencesBarCircle}
             styles={buildStyles({

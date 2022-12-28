@@ -89,6 +89,13 @@
     position: fixed;
     background-color: #00000050;
 }
+.popupSpan{
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
 
 @keyframes anvil {
     0% {
@@ -197,7 +204,7 @@
     align-items: center;
     border-radius: 10px;
     border-style: solid;
-    width: 350px;
+    width: 330px;
     height: 120px;
     margin-left: auto;
     margin-right: auto;
@@ -219,8 +226,8 @@
 }
 
 .slotMachine>div>img {
-    width: 70px;
-    height: 70px;
+    width: 65px;
+    height: 65px;
     border-radius: 10px;
     border-width: 2px;
     border-style: solid;
@@ -228,8 +235,8 @@
 }
 
 .slotMachine>div>button {
-    width: 70px;
-    height: 70px;
+    width: 65px;
+    height: 65px;
     border-radius: 10px;
     border-width: 2px;
     border-style: solid;

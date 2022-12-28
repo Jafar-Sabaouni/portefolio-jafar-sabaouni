@@ -102,7 +102,7 @@
     justify-content: center;
     align-items: center;
     justify-items: center;
-    width: 40%;
+    width: 500px;
     height: 400px;
 
 }
@@ -115,7 +115,7 @@
 
 .mainProfilePageLanguagesBar {
     width: 300px;
-    height: 50%;
+    height: 200px;
     background-color: #073648;
     border-radius: 5px;
     box-shadow: 4px 5px 8px #343434;
@@ -197,8 +197,8 @@
 }
 
 .mainProfilePageDetailsBar {
-    width: 40%;
-    height: 50%;
+    width: 300px;
+    height: 200px;
     background-color: #073648;
     border-radius: 5px;
     box-shadow: 4px 5px 8px #343434;
@@ -258,15 +258,64 @@
         align-items: center;
         height: 200px;
     }
-
-    .mainProfilePageExperiencesBar {
-        height: 80px;
-        padding: 2%;
-        width: 90%;
+    .mainProfilePageExperiences{
+        height: 400px;
     }
+    .mainProfilePageExperiencesBar {
+        width: 70%;
+        height: auto;
+        margin: auto;
+        background-color: #073648;
+        border-radius: 5px;
+        box-shadow: 4px 5px 8px #343434;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    .mainProfilePageExperiencesBarCircle {
+        margin: 10px;
+        height: 100px;
+        width: fit-content;
+    }
+    
     .mainProfilePageDetails {
-        padding: auto;
+        max-width: 70%;
     
     }
+    .mainProfilePageDetails{
+        max-width: 70%;
+    }
+    .mainProfilePagecontainerlanguagesDetails {
+        height: 600PX;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .mainProfilePageLanguagesBar {
+        width: 300px;
+        height: 200px;
+        background-color: #073648;
+        border-radius: 5px;
+        box-shadow: 4px 5px 8px #343434;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .mainProfilePageDetailsBar {
+        width: 300px;
+        height: 200px;
+        background-color: #073648;
+        border-radius: 5px;
+        box-shadow: 4px 5px 8px #343434;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    
+    
     
 }
