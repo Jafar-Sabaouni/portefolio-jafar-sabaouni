@@ -80,7 +80,7 @@
     background: #09435a;
 }
 .emailSenderSubmit{
-    background-color: #073648;
+    background-color: #5a5a5a14;
     color: #fff;
     border-color: #fff;
     border-style: solid;
@@ -88,7 +88,7 @@
 }
 .emailSenderSubmit:hover{
     background-color: #e4e4e4;
-    color:#073648;
+    color:#000000;
 }
 
 .WarningTextContainer {

@@ -1,11 +1,14 @@
-import React from 'react';
+import React ,{useEffect,useState} from 'react';
 import styles from "../Home.module.css";
 import profilePicture from '../assets/JafarSabaouni.png';
-const Description = () => {
+interface DescriptionProps {
+  colorTheme:string
+}
+const Description = ({colorTheme}:DescriptionProps) => {
 
   return (
     <>
-    <section className={styles.mainProfilePageDescription}>
+    <section className={styles.mainProfilePageDescription} style={{backgroundColor: colorTheme }}>
         <div className={styles.mainProfilePageDescriptionText}>
           <h1>Hi I am Jafar</h1>
 

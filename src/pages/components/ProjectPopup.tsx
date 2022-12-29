@@ -13,9 +13,10 @@ interface PopupProps {
   name: string;
   description: string;
   projectName: string;
+  colorTheme:string;
 }
 
-const ProjectPopup = ({ name, description, projectName }: PopupProps) => {
+const ProjectPopup = ({colorTheme, name, description, projectName }: PopupProps) => {
   const [popup, setPopup] = useState<boolean>(false);
 
   let ProjectComponent ;
@@ -51,8 +52,8 @@ const ProjectPopup = ({ name, description, projectName }: PopupProps) => {
     <>
        <span className={styles.popupSpan}>
       {popup && (
-        <div className={styles.popupContainer}>
-          <div>
+        <div className={styles.popupContainer} >
+          <div style={{backgroundColor: colorTheme }}>
             <button onClick={() => { setPopup(!popup); }}>x</button>
             <h1>{name}</h1>
             <div className={styles.popupProjectContainer}>
@@ -63,7 +64,7 @@ const ProjectPopup = ({ name, description, projectName }: PopupProps) => {
           </div>
         </div>
       )}</span>
-      <div onClick={() => { setPopup(!popup); }}>
+      <div onClick={() => { setPopup(!popup); }} style={{backgroundColor: colorTheme }}>
         <h2>{name}</h2> <p>{description}</p>
       </div>
     </>

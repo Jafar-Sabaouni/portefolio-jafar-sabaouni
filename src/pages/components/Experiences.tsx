@@ -3,20 +3,23 @@ import styles from "../Home.module.css";
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
+interface DescriptionProps {
+  colorTheme:string
+}
 
-const Experiences = () => {
+const Experiences = ({colorTheme}:DescriptionProps) => {
 
   return (
     <>
-    <section className={styles.mainProfilePageExperiences}>
-        <h2>Skils</h2>
-        <div className={styles.mainProfilePageExperiencesBar}>
+    <section className={styles.mainProfilePageExperiences} >
+        <h2 style={{color: colorTheme }}>Skils</h2>
+        <div className={styles.mainProfilePageExperiencesBar} style={{backgroundColor: colorTheme }}>
           <CircularProgressbar
             value={90}
             text={`HTML`}
             className={styles.mainProfilePageExperiencesBarCircle}
             styles={buildStyles({
-              trailColor: '#09455c',
+              trailColor: colorTheme,
               pathColor: '#9BBFE0',
               textColor: '#9BBFE0',
 
@@ -27,7 +30,7 @@ const Experiences = () => {
             text={`CSS`}
             className={styles.mainProfilePageExperiencesBarCircle}
             styles={buildStyles({
-              trailColor: '#09455c',
+              trailColor: colorTheme,
               pathColor: '#64C2A6',
               textColor: '#64C2A6',
 
@@ -38,7 +41,7 @@ const Experiences = () => {
             text={`Node.js`}
             className={styles.mainProfilePageExperiencesBarCircle}
             styles={buildStyles({
-              trailColor: '#09455c',
+              trailColor: colorTheme,
               pathColor: '#C6D68F',
               textColor: '#C6D68F',
 
@@ -49,7 +52,7 @@ const Experiences = () => {
             text={`React.js`}
             className={styles.mainProfilePageExperiencesBarCircle}
             styles={buildStyles({
-              trailColor: '#09455c',
+              trailColor: colorTheme,
               pathColor: '#2D87BB',
               textColor: '#2D87BB',
 
@@ -61,7 +64,7 @@ const Experiences = () => {
             className={styles.mainProfilePageExperiencesBarCircle}
             styles={buildStyles({
               textSize: '14',
-              trailColor: '#09455c',
+              trailColor:colorTheme,
               pathColor: '#F66D44',
               textColor: '#F66D44',
 
@@ -73,7 +76,7 @@ const Experiences = () => {
             text={`JS`}
             className={styles.mainProfilePageExperiencesBarCircle}
             styles={buildStyles({
-              trailColor: '#09455c',
+              trailColor: colorTheme,
               pathColor: '#C6D68F',
               textColor: '#C6D68F',
 
@@ -84,7 +87,7 @@ const Experiences = () => {
             text={`TS`}
             className={styles.mainProfilePageExperiencesBarCircle}
             styles={buildStyles({
-              trailColor: '#09455c',
+              trailColor: colorTheme,
               pathColor: '#9BBFE0',
               textColor: '#9BBFE0',
 
@@ -95,7 +98,7 @@ const Experiences = () => {
             text={`C#`}
             className={styles.mainProfilePageExperiencesBarCircle}
             styles={buildStyles({
-              trailColor: '#09455c',
+              trailColor: colorTheme,
               pathColor: '#64C2A6',
               textColor: '#64C2A6',
 
@@ -106,7 +109,7 @@ const Experiences = () => {
             text={`mySQL`}
             className={styles.mainProfilePageExperiencesBarCircle}
             styles={buildStyles({
-              trailColor: '#09455c',
+              trailColor: colorTheme,
               pathColor: '#2D87BB',
               textColor: '#2D87BB',
 

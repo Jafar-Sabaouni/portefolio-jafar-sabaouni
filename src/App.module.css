@@ -37,6 +37,27 @@ body::-webkit-scrollbar {
 .navLink:hover {
   color: rgba(255, 255, 255, 0.623);
 }
+.themeButton{
+  color: #fff;
+  border-width: 0;
+  border-radius: 5px;
+  font-size: 15px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 30px;
+  height: 30px;
+}
+.themeButton:hover{
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 40px;
+  height: 40px;
+  
+}
+
+
 
 footer {
   margin-top: 27%;

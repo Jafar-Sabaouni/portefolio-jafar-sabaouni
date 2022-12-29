@@ -1,16 +1,18 @@
 import React from 'react';
 import styles from "../Home.module.css";
 
+interface LanguagesAndDetailsProps {
+  colorTheme:string
+}
 
-
-const LanguagesAndDetails = () => {
+const LanguagesAndDetails = ({colorTheme}:LanguagesAndDetailsProps) => {
 
   return (
     <>
           <section className={styles.mainProfilePagecontainerlanguagesDetails}>
         <section className={styles.mainProfilePageLanguages}>
-          <h2>languages</h2>
-          <div className={styles.mainProfilePageLanguagesBar}>
+          <h2 style={{color: colorTheme }}>languages</h2>
+          <div className={styles.mainProfilePageLanguagesBar} style={{backgroundColor: colorTheme }} >
             <div>
               <div><p>Duch</p><div className={styles.mainProfilePageLanguagesPercentageBar}> <div className={styles.mainProfilePageLanguagesPercentageBarDuch}></div></div></div>
               <div><p>English</p><div className={styles.mainProfilePageLanguagesPercentageBar}> <div className={styles.mainProfilePageLanguagesPercentageBarEnglish}></div></div></div>
@@ -20,8 +22,8 @@ const LanguagesAndDetails = () => {
           </div>
         </section>
         <section className={styles.mainProfilePageDetails}>
-          <h2>details</h2>
-          <div className={styles.mainProfilePageDetailsBar}>
+          <h2 style={{color: colorTheme }}>details</h2>
+          <div className={styles.mainProfilePageDetailsBar} style={{backgroundColor: colorTheme }}>
             <table >
               <tr>
                 <th>Name:</th>

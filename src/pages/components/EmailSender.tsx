@@ -1,15 +1,13 @@
 import React, { useRef, useState, FormEvent, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import styles from "../Contact.module.css";
-
-const EmailSender: React.FC = () => {
+interface EmailSenderProps {
+  colorTheme:string
+}
+const EmailSender = ({colorTheme}:EmailSenderProps) => {
   const form = useRef<HTMLFormElement>(null);
-  // keeps count of the mails send
   const [mailCount, setMailCount] = useState<number>(0);
-
-  //shows sended notification
   const [sendNotification, setSendNotification] = useState<boolean>(false);
-  // check if the user has sent two mails
   const hasSentTwoMails = localStorage.getItem("mailCount") === "2";
 
   useEffect(() => {
@@ -39,7 +37,7 @@ const EmailSender: React.FC = () => {
   return (
     <>
       {sendNotification && <div className={styles.IntroTextContainer}> <p>Your email has been send successfully!</p></div>}
-      {hasSentTwoMails || <form ref={form} onSubmit={sendEmail} className={styles.emailSender}>
+      {hasSentTwoMails || <form ref={form} onSubmit={sendEmail} className={styles.emailSender}  style={{backgroundColor: colorTheme }}>
         <label>subject</label>
         <input type="text" name="subject" required />
         <label>Name</label>
