@@ -45,6 +45,7 @@
 
 
 
+
 }
 
 .ProjectsContainer>div>h2,
@@ -64,8 +65,8 @@
     width: 320px;
     height: 190px;
     margin: 0px;
-
 }
+
 
 .ProjectsContainer>div:hover>h2 {
     font-size: 115%;
@@ -232,7 +233,21 @@
     border-width: 2px;
     border-style: solid;
     width: 40%;
+    animation: size-animation 6s infinite;
 }
+
+@keyframes size-animation {
+    0% {
+      transform: scale(0.9);
+    }
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0.9);
+    }
+  }
+
 
 .slotMachine>div>button {
     width: 65px;
@@ -240,14 +255,14 @@
     border-radius: 10px;
     border-width: 2px;
     border-style: solid;
-
     font-size: larger;
 }
 
 .slotMachine>div>button:hover {
-
     background-color: crimson;
+    animation: size-animation 6s infinite;
     color: #fff;
+    
 
 }
 @media screen and (max-width: 795px) {

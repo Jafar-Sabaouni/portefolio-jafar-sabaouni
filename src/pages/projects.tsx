@@ -12,7 +12,7 @@ const Projects = ({colorTheme}:ProjectsProps) => {
 
             
             <div className={styles.IntroTextContainer}>
-                <h1>my projects</h1>
+                <h1 style={{color: colorTheme }}>my projects</h1>
                 <p>Welcome to my projects page! On this page, you will see a selection of eight projects that I completed as part of the WebFrameworks class at AP Hogeschool. These projects showcase the skills I learned in ReactJS and TypeScript development. To interact with a project, you need to hover over the project box and click it. I hope you enjoy exploring these projects as much as I enjoyed creating them.</p>
             </div>
             <section className={styles.ProjectsContainer}>

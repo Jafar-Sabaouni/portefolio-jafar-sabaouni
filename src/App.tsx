@@ -33,7 +33,7 @@ const Root = ({colorThemeChange}:rootProps) => {
           <NavLink className={({ isActive }) => isActive ? styles.activeNavLink : styles.navLink} to="contact">contact</NavLink>
           {colorTheme !== "#073648" && <button style={{backgroundColor: "#073648" }} className={styles.themeButton} onClick={()=>{changeColorTheme("#073648");}}>🖌</button>}
           {colorTheme !== "#97000c" &&<button style={{backgroundColor: "#97000c" }} className={styles.themeButton} onClick={()=>{changeColorTheme("#97000c");}}>🖌</button>}
-          {colorTheme !== "#007747" &&<button style={{backgroundColor: "#007747" }} className={styles.themeButton} onClick={()=>{changeColorTheme("#007747");}}>🖌</button>}
+          {colorTheme !== "#202123" &&<button style={{backgroundColor: "#202123" }} className={styles.themeButton} onClick={()=>{changeColorTheme("#202123");}}>🖌</button>}
         </div>
         <ApiPopups/>
         <div className={styles.content}>
@@ -51,11 +51,11 @@ const App = () => {
         setColorTheme(color);
         console.log(color)
       };
-    const currentUrl = window.location.pathname;
+
     const router = createBrowserRouter([
         {
           
-            path: currentUrl+"/",
+            path: "portefolio-jafar-sabaouni/",
             element: <Root colorThemeChange={ChangeColorTheme}/>,
             children: [
                 {
