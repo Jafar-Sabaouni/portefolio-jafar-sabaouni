@@ -35,11 +35,11 @@ const Root = ({colorThemeChange}:rootProps) => {
           {colorTheme !== "#97000c" &&<button style={{backgroundColor: "#97000c" }} className={styles.themeButton} onClick={()=>{changeColorTheme("#97000c");}}>🖌</button>}
           {colorTheme !== "#202123" &&<button style={{backgroundColor: "#202123" }} className={styles.themeButton} onClick={()=>{changeColorTheme("#202123");}}>🖌</button>}
         </div>
-        <ApiPopups/>
+        
         <div className={styles.content}>
           <Outlet />
         </div >
-        
+        <ApiPopups/>
         <footer style={{backgroundColor: colorTheme }} >© 2022  build by Jafar sabaouni using reactjs typescript.</footer>
       </div>
     );
