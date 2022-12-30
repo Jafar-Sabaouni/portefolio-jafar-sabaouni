@@ -50,8 +50,21 @@
     height: 350px;
     border-radius: 50%;
     justify-self: center;
-
+    animation: size-animation 6s infinite;
 }
+
+@keyframes size-animation {
+    0% {
+      transform: scale(0.98);
+    }
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0.98);
+    }
+  }
+
 
 .mainProfilePageExperiences {
     padding-top: 50px;
