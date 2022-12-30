@@ -51,10 +51,11 @@ const App = () => {
         setColorTheme(color);
         console.log(color)
       };
-
+    const currentUrl = window.location.pathname;
     const router = createBrowserRouter([
         {
-            path: "/",
+          
+            path: currentUrl+"/",
             element: <Root colorThemeChange={ChangeColorTheme}/>,
             children: [
                 {
