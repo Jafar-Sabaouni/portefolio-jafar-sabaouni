@@ -1,5 +1,5 @@
 {
-  "homepage":"http://s128804.github.io/portefolio-jafar-sabaouni/",
+  "homepage": "http://s128804.github.io/portefolio-jafar-sabaouni/",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -13,12 +13,13 @@
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.9",
     "emailjs-com": "^3.2.0",
+    "history": "^5.3.0",
     "react": "^18.2.0",
     "react-circular-progressbar": "^2.1.0",
     "react-dom": "^18.2.0",
     "react-loader-spinner": "^5.3.4",
     "react-native-percentage-circle": "^1.0.7",
-    "react-router-dom": "^6.4.5",
+    "react-router-dom": "^6.11.1",
     "react-scripts": "5.0.1",
     "react-sweet-progress": "^1.1.2",
     "react-sweet-progress-simdi": "^1.2.0",
@@ -28,8 +29,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
